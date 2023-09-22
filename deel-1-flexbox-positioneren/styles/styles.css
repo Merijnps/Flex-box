@@ -1,1 +1,82 @@
 /*Schrijf hier jouw CSS*/
+
+/*Opdracht 01*/
+
+.items {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Opdracht 02*/
+
+.items-02 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.items-02 li {
+    flex: 1;
+}
+
+/*Opdracht 03*/
+
+
+.items-03 {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+}
+
+.items-03 li:nth-child(1) {
+    align-self: flex-start; /* Align to the top */
+}
+
+.items-03 li:nth-child(2) {
+    align-self: center; /* Center horizontally and vertically */
+}
+
+.items-03 li:nth-child(3) {
+    align-self: flex-end; /* Align to the bottom */
+}
+
+/*Opdracht 04*/
+
+.items-04 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+}
+
+/*Opdracht 05*/
+
+.container  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.items-0501 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 40px;
+}
+
+.items-0502 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 40px;
+}
+
+.items-0503 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    row-gap: 40px;
+}
+

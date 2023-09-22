@@ -1,1 +1,43 @@
 /*Schrijf hier jouw CSS*/
+
+body {
+    display: flex;
+    flex-basis: 100vh;
+}
+
+.col-1 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 20vw;
+}
+
+.col-2 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100vw;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+header, footer {
+    max-height: 20vh;
+}
+
+header, main, footer {
+    flex: 1; /* Header, main, and footer can grow but not shrink */
+}
+
+article {
+    flex-grow: 3; /* Article can grow and shrink, twice as flexible as the others */
+}
+
+aside {
+    flex-grow: 1; /* Aside cannot grow or shrink */
+}
+
+/* Adjust the order of elements using the order property */
+

@@ -1,1 +1,48 @@
 /*Schrijf hier jouw CSS*/
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    flex-grow: 0; /* Header and footer cannot grow */
+    flex-shrink: 0; /* Header and footer cannot shrink */
+    min-height: 100px;
+}
+
+
+main, nav, aside {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+article {
+    flex-grow: 3;
+    flex-shrink: 3;
+}
+
+/* Adjust the order of elements using the order property */
+
+nav {
+    order: 3;
+}
+
+aside {
+    order: 3;
+}
+
+article {
+    order: 2;
+}
+
+footer {
+    order: 5;
+}
+
